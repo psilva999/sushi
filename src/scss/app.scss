@@ -31,7 +31,7 @@ body {
   // }
 
   header, section {
-    width:82.3125rem;
+    width:80rem;
   }
 
   h1, h2 {
@@ -46,6 +46,43 @@ body {
   li {
     list-style:none;
   }
+
+  button {
+    cursor:pointer;
+  }
+
+  .order {
+    background:$like-wine;
+    color:$white;
+    font-size:1.1rem;
+    font-weight:400;
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    padding:.3rem 0 .3rem 2.3rem;
+    width:12.7rem;
+    letter-spacing:.1rem;
+    justify-self:left;
+    margin-top:.25rem;
+    border-radius:2rem;
+
+    &:after {
+      content:'>';
+      display:block;
+      color:$white;
+      font-size:1.7rem;
+      margin-top:.27rem;
+      margin-left:.25rem;
+      font-weight:300;
+      transition:.5s;
+    }
+
+    &:hover:after {
+      transition:.5s;
+      margin-left:.5rem;
+    }
+  }
 }
 
 @import 'header';
+@import 'enjoy';

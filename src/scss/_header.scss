@@ -3,7 +3,7 @@
 header {
   justify-content:space-between;
   align-items:center;
-  padding:.7rem 1rem .45rem 0;
+  padding:1rem 1rem 1rem 0;
 
   &, div, nav, ul {
     display:flex;
@@ -15,7 +15,7 @@ header {
   }
 
   img:first-child {
-    width:1.7rem;
+    width:1.8rem;
   }
 
   div {
@@ -27,23 +27,24 @@ header {
   }
 
   ul {
-    gap:1.3rem;
+    gap:1.1rem;
   }
 
   li {
     font-weight:300;
     padding:.15rem .45rem;
     letter-spacing:.1rem;
-    transition:.2s;
+    transition:.5s;
+    font-size:1rem;
 
-    &:hover {
+    &:hover, &.active {
       color:$fine-orange;
-      transition:.2s;
+      transition:.5s;
     }
   }
 
   h1 {
-    font-size:1.3rem;
+    font-size:1.4rem;
   }
 
   .toggle-menu {
@@ -51,14 +52,9 @@ header {
   }
 
   .toggle-background {
-    width:1.3rem;
+    width:1.2rem;
     opacity:.8;
     margin-top:-.15rem;
     transition:.2s;
-
-    &:hover {
-      opacity:1;
-      transition:.2s;
-    }
   }
 }

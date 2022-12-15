@@ -1,23 +1,28 @@
 import React from 'react'
 
+import One from '../assets/imgs/1.png'
+import Two from '../assets/imgs/2.png'
+
 const Enjoy = () => {
   return (
 
-    <section>
+    <section id='enjoy' className='enjoy'>
       <article> 
-        <h1>Enjoy Delicious
-          <img src=''/>
-          Sushi Food
-        </h1>
+        <h1>Enjoy Delicious</h1>
+        
+        <div>
+          <img src={ Two }/>
+          <h1>Sushi Food</h1>
+        </div>
 
         <p>
           Enjoy a good dinner with the best dishes in the restaurant and improve your day.
         </p>
 
-        <button>Order Now</button>
+        <button className='order'>Order Now</button>
       </article>
 
-      <img src="" alt="enjoy-sushi"/>
+      <img src={ One } alt="enjoy-sushi" className='enjoy-sushi'/>
     </section>
   )
 }

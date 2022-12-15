@@ -1,0 +1,51 @@
+@import 'config';
+
+.enjoy {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  h1 {
+    font-size:4rem;
+    font-weight:500;
+    
+    &:first-child {
+      width:30rem;
+    }
+
+    &:last-child {
+      margin-top:.5rem;
+    }
+  }
+
+  div {
+    display:flex;
+    margin-top:-1.5rem;
+    width:26.5rem;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  article {
+    display:grid;
+    place-items:left;
+    gap:1.5rem;
+    margin-top:-4rem;
+  }
+
+  article img {
+    margin-top:.5rem;
+  }
+
+  p {
+    font-weight:300;
+    font-size:1.1rem;
+    letter-spacing:.0625rem;
+    width:22.5rem;
+  }
+
+  .enjoy-sushi {
+    width:790px;
+    margin-top:1rem;
+  }
+}
