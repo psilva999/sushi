@@ -6,5 +6,46 @@
   box-sizing:border-box;
   border-spacing:0;
   padding:0;
+  color:var(--color-text);
 }
 
+body {
+  background:var(--background-body);
+  overflow-x:hidden;
+  overflow-y:auto;
+  display:grid;
+  place-items:center;
+  // scrollbar-width:thin;
+  // scrollbar-color:#7c6a6a;
+
+  // &::-webkit-scrollbar {
+  //   width:.43rem;
+  // }
+
+  // &::-webkit-scrollbar-track {
+
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+
+  // }
+
+  header, section {
+    width:82.3125rem;
+  }
+
+  h1, h2 {
+    font-family:$lora;
+    letter-spacing:.0625rem;
+    
+    &.logo {
+      font-weight:lighter;
+    }
+  }
+
+  li {
+    list-style:none;
+  }
+}
+
+@import 'header';
