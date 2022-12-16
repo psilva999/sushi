@@ -1,0 +1,40 @@
+@import 'config';
+
+.provide {
+  div {
+    h1 {
+      margin-top:0;
+    }
+  }
+
+  h1 {
+    margin-top:-1.5rem;
+  }
+
+  p {
+    width:29rem;
+  }
+
+  img:first-child {
+    margin-left:-2.8rem;
+  }
+}
+
+.recently {
+  span {
+    margin-bottom:-.7rem !important;
+  }
+
+  article {
+    margin-top:-5rem;
+  }
+
+  p {
+    margin-top:-.3rem;
+    width:27rem;
+  }
+
+  button:after {
+    margin-top:.25rem !important;
+  }
+}
