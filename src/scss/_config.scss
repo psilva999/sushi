@@ -1,6 +1,10 @@
 :root {
   --background-body:#FFEAE0;
   --color-text:#2C2420;
+
+  --sombra:rgba(44, 36, 32, .8);
+  --nevoa:rgba(44, 36, 32, .6);
+  --nuvem:rgba(44, 36, 32, .05);
 }
 
 $lora:'Lora', serif;
@@ -10,3 +14,6 @@ $fine-orange:#D36836;
 $like-wine:#791625;
 
 $white:#FFEAE0;
+$black:#2C2420;
+
+$nuvem:-3px 3px 9px 0px var(--nuvem);

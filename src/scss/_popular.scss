@@ -1,0 +1,87 @@
+@import 'config';
+
+.popular {
+  min-height:600px !important;
+  padding-bottom:5rem;
+  margin-bottom:2rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:top;
+  gap:1.5rem;
+
+  div {
+    display:grid;
+    place-items:center;
+  }
+
+  span, h1, div {
+    width:100%;
+    text-align:center;
+  }
+
+  article {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+
+    h2 {
+      font-size:1.6rem;
+      font-weight:500;
+      letter-spacing:.13rem;
+    }
+
+    p {
+      letter-spacing:.1rem;
+      font-weight:300;
+      margin-top:-.5rem;
+    }
+
+    li {
+      font-size:1.4rem;
+      color:$like-wine;
+
+      &:after {
+        content:'';
+        opacity:.6;
+        margin-left:4rem;
+        margin-top:.1rem;
+        background:url('../assets/svg/6-buy.svg') no-repeat;
+        width:2rem;
+        height:2rem;
+        position:absolute;
+        transition:.3s;
+      }
+    }
+
+    div {
+      cursor:pointer;
+      border-radius:1rem;
+      padding:1.5rem .7rem 1.5rem .7rem;
+      background:$white;
+      -webkit-box-shadow:$nuvem;
+      box-shadow:$nuvem;
+      gap:1rem;
+      width:18.5rem;
+
+      img {
+        transition:.5s;
+        width:17rem;
+      }
+
+      &:hover {
+        img {
+          transition:.5s;
+          transform:scale(1.2);
+        }
+
+        li:after {
+          transition:.3s;
+          opacity:1;
+        }
+      }
+      
+    }
+  }
+}

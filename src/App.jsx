@@ -4,10 +4,10 @@ import Header from './Components/Header'
 import Enjoy from './Components/Enjoy'
 
 import Provide from './Components/Provide'
-// import Popular from './Components/Popular'
+import Popular from './Components/Popular'
 import Recently from './Components/Recently'
 
-// import Subscribe from './Components/Subscribe'
+import Subscribe from './Components/Subscribe'
 // import Footer from './Components/Footer'
 
 function App() {
@@ -20,10 +20,10 @@ function App() {
         <Enjoy/>
 
         <Provide/>
-        {/* <Popular/> */}
+        <Popular/>
 
         <Recently/>
-        {/* <Subscribe/> */}
+        <Subscribe/>
       </main>
 
       {/* <Footer/> */}

@@ -21,6 +21,18 @@
 }
 
 .recently {
+  margin-top:1rem;
+
+  h1:after {
+    content:'';
+    position:absolute;
+    background:url('../assets/svg/7-samurai.svg') no-repeat;
+    width:3.7rem;
+    height:4.3rem;
+    margin-top:3.5rem;
+    transform:rotate(-5deg);
+  }
+
   span {
     margin-bottom:-.7rem !important;
   }
@@ -34,7 +46,11 @@
     width:27rem;
   }
 
-  button:after {
-    margin-top:.25rem !important;
+  button {
+    margin-top:.7rem !important;
+
+    &:after {
+      margin-top:.25rem !important;
+    }
   }
 }

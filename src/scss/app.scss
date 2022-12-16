@@ -13,8 +13,6 @@ body {
   background:var(--background-body);
   overflow-x:hidden;
   overflow-y:auto;
-  display:grid;
-  place-items:center;
   // scrollbar-width:thin;
   // scrollbar-color:#7c6a6a;
 
@@ -30,8 +28,31 @@ body {
 
   // }
 
+  &, main {
+    display:grid;
+    place-items:center;
+  }
+
   header, section {
     width:80rem;
+  }
+
+  main {
+    gap:1rem;
+  }
+
+  section {
+    max-height:700px;
+
+    span {
+      font-family:$dancing;
+      color:$fine-orange;
+      margin-bottom:-.7rem;
+    }
+
+    h1 {
+      font-weight:500;
+    }
   }
 
   .enjoy, .provide, .recently {
@@ -40,15 +61,11 @@ body {
     align-items:center;
 
     span {
-      font-family:$dancing;
-      color:$fine-orange;
       font-size:1.8rem;
-      margin-bottom:-.7rem;
     }
 
     h1 {
       font-size:4rem;
-      font-weight:500;
     }
 
     p {
@@ -76,6 +93,20 @@ body {
 
     .enjoy-sushi {
       width:800px;
+    }
+  }
+
+  .popular, .subscribe {
+    width:68rem;
+
+    span {
+      font-size:1.4rem;
+    }
+  
+    h1 {
+      font-size:3rem;
+      margin-top:-.3rem;
+      margin-bottom:1rem;
     }
   }
 
@@ -126,6 +157,10 @@ body {
       transition:.5s;
       margin-left:.5rem;
     }
+
+    &:focus {
+      outline:none;
+    }
   }
 }
 
@@ -133,3 +168,5 @@ body {
 @import 'enjoy';
 
 @import 'provide-added';
+@import 'popular';
+@import 'subscribe';

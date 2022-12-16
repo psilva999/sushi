@@ -5,7 +5,7 @@ import Eight from '../assets/imgs/8.png'
 const Recently = () => {
   return (
 
-    <section className='recently'> 
+    <section className='recently' id='recently'> 
       <article> <span>Recently Added</span>
 
         <h1>Sushi Samurai Salmón Cheese</h1>
