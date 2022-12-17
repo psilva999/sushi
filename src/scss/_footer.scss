@@ -1,0 +1,81 @@
+@import 'config';
+
+footer {
+  margin:auto;
+  margin-bottom:4rem;
+  display:grid;
+  gap:7rem;
+
+  section, .copy {
+    display:flex;
+    justify-content:space-between;
+    align-items:top;
+  }
+
+  section {
+    div {
+      display:flex;
+      align-items:center;
+      gap:.5rem;
+    }
+
+    h2 {
+      font-weight:400;
+      font-family:$poppins;
+      font-size:1.3rem;
+
+      &.logo-rodape {
+        font-weight:400;
+      }
+    }
+
+    ul, p, .social {
+      margin-top:.8rem;
+    }
+
+    .social {
+      gap:.75rem;
+
+      img {
+        cursor:pointer;
+      }
+    }
+
+    ul {
+      display:grid;
+      gap:.5rem;
+    }
+
+    .links li {
+      transition:.2s;
+    }
+
+    .links li:hover {
+      color:$fine-orange;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    li, p {
+      color:var(--nevoa);
+      font-size:1rem;
+    }
+
+    p {
+      width:15rem;
+    }
+  }
+
+  .copy { 
+    p {
+      color:var(--nevoa);
+      font-size:.9rem;
+    }
+
+    div {
+      display:flex;
+      gap:.75rem;
+    }
+
+  }
+}

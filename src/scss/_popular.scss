@@ -44,14 +44,12 @@
 
       &:after {
         content:'';
-        opacity:.6;
         margin-left:4rem;
         margin-top:.1rem;
         background:url('../assets/svg/6-buy.svg') no-repeat;
         width:2rem;
         height:2rem;
         position:absolute;
-        transition:.3s;
       }
     }
 
@@ -73,12 +71,7 @@
       &:hover {
         img {
           transition:.5s;
-          transform:scale(1.2);
-        }
-
-        li:after {
-          transition:.3s;
-          opacity:1;
+          transform:scale(1.1);
         }
       }
       

@@ -33,7 +33,7 @@ body {
     place-items:center;
   }
 
-  header, section {
+  header, main section {
     width:80rem;
   }
 
@@ -41,7 +41,7 @@ body {
     gap:1rem;
   }
 
-  section {
+  main section {
     max-height:700px;
 
     span {
@@ -96,15 +96,17 @@ body {
     }
   }
 
-  .popular, .subscribe {
+  .popular, .subscribe, footer {
     width:68rem;
+  }
 
+  .popular, .subscribe {
     span {
-      font-size:1.4rem;
+      font-size:1.2rem;
     }
   
     h1 {
-      font-size:3rem;
+      font-size:2.5rem;
       margin-top:-.3rem;
       margin-bottom:1rem;
     }
@@ -166,7 +168,8 @@ body {
 
 @import 'header';
 @import 'enjoy';
-
 @import 'provide-added';
+
 @import 'popular';
 @import 'subscribe';
+@import 'footer';

@@ -7,7 +7,7 @@ const Subscribe = () => {
   return (
 
     <section className='subscribe' id ='subscribe'>
-      <img src={ Nine }/>
+      <img src={ Nine } className='offer'/>
 
       <article> <span>Newsletter</span>
         <h1>Subscribe for Offer Updates</h1>
@@ -15,7 +15,7 @@ const Subscribe = () => {
         <div>
           <input type="email" id='email' placeholder='Best E-mail'/>
 
-          <button>
+          <button disabled>
             <img src={ Send } alt='send'/>
           </button>
         </div>

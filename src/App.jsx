@@ -8,7 +8,7 @@ import Popular from './Components/Popular'
 import Recently from './Components/Recently'
 
 import Subscribe from './Components/Subscribe'
-// import Footer from './Components/Footer'
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
         <Subscribe/>
       </main>
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }
