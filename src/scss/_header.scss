@@ -10,7 +10,11 @@ header {
     align-items:center;
   }
 
-  div, li, nav img {
+  div {
+    user-select:none;
+  }
+
+  li, nav img {
     cursor:pointer;
   }
 

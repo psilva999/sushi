@@ -18,7 +18,7 @@ const Footer = () => {
       <section>
 
         <article>
-          <div>
+          <div className='bismarck'>
             <img src={ Logo } alt="logo"/>
             <h2 className='logo-rodape'>Sushi</h2>
           </div>
@@ -48,8 +48,8 @@ const Footer = () => {
 
         <article> <h2>Adress</h2>
           <ul>
-            <li>North Atlantic, 1942</li>
-            <li>Bismarck 124</li>
+            <li>North Atlantic, 1941</li>
+            <li>Bismarck 2000</li>
           </ul>
         </article>
 
@@ -74,7 +74,7 @@ const Footer = () => {
 
       </article>
     </footer>
-    
+
   )
 }
 

@@ -2,9 +2,13 @@
 
 footer {
   margin:auto;
-  margin-bottom:4rem;
+  margin-bottom:2.5rem;
   display:grid;
-  gap:7rem;
+  gap:6rem;
+
+  .bismarck {
+    user-select:none;
+  }
 
   section, .copy {
     display:flex;

@@ -164,6 +164,31 @@ body {
       outline:none;
     }
   }
+
+  .to-top {
+    position:fixed;
+    right:1.4rem;
+    bottom:1.7rem;
+    background:var(--gradient);
+    width:2.5rem;
+    height:2.5rem;
+    transform:rotate(-90deg);
+    border-radius:100%;
+    opacity:.6;
+    transition:.2s;
+
+    &:after {
+      content:'>';
+      color:var(--color-text);
+      font-weight:200;
+      font-size:1.9rem;
+    }
+
+    &:hover {
+      opacity:1;
+      transition:.2s;
+    }
+  }
 }
 
 @import 'header';

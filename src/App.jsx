@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 import Header from './Components/Header'
 import Enjoy from './Components/Enjoy'
@@ -25,6 +26,16 @@ function App() {
         <Recently/>
         <Subscribe/>
       </main>
+
+      <Link activeClass="active"
+          to='enjoy'
+          spy={ true }
+          smooth={ true }
+          offset={ -90 }
+          duration={ 500 }
+          className='link-scroll'>
+        <button className='to-top'>
+        </button></Link>
 
       <Footer/>
     </>
