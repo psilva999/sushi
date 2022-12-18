@@ -1,4 +1,5 @@
 @import 'config';
+@import 'keyframes';
 
 * {
   border:0;
@@ -13,20 +14,24 @@ body {
   background:var(--background-body);
   overflow-x:hidden;
   overflow-y:auto;
-  // scrollbar-width:thin;
-  // scrollbar-color:#7c6a6a;
+  scrollbar-width:thin;
+  scrollbar-color:#7c6a6a;
 
-  // &::-webkit-scrollbar {
-  //   width:.43rem;
-  // }
+  &::-webkit-scrollbar {
+    width:.43rem;
+  }
 
-  // &::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
+    background:#F2E8CF;
+    border-radius:.1rem;
+  }
 
-  // }
-
-  // &::-webkit-scrollbar-thumb {
-
-  // }
+  &::-webkit-scrollbar-thumb {
+    background:$like-wine;
+    background:$like-wine;
+    border-radius:.1rem;
+    border:.375rem solid $like-wine;
+  }
 
   &, main {
     display:grid;
@@ -176,6 +181,8 @@ body {
     border-radius:100%;
     opacity:.6;
     transition:.2s;
+    display:none;
+    animation:opacity-zero .3s linear forwards;
 
     &:after {
       content:'>';
@@ -187,6 +194,11 @@ body {
     &:hover {
       opacity:1;
       transition:.2s;
+    }
+
+    &.active {
+      display:block;
+      animation:opacity-one .3s linear forwards;
     }
   }
 }

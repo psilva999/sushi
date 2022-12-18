@@ -11,7 +11,11 @@ import Recently from './Components/Recently'
 import Subscribe from './Components/Subscribe'
 import Footer from './Components/Footer'
 
+import { events } from './Events/events'
+
 function App() {
+  window.addEventListener("scroll", events)
+  window.addEventListener("load", events)
 
   return (
     <>

@@ -1,0 +1,21 @@
+@keyframes opacity-one {
+  from {
+    opacity:0;
+    bottom:1rem;
+  }
+
+  to {
+    bottom:1.7rem;
+    opacity:.6;
+  }
+}
+
+@keyframes opacity-zero {
+  from {
+    opacity:.6;
+  }
+
+  to {
+    opacity:0;
+  }
+}
