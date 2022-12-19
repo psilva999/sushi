@@ -2,6 +2,7 @@ import React from 'react'
 
 import Nine from '../assets/imgs/9.png'
 import Send from '../assets/svg/8-send.svg'
+import BranchSubscribe from '../assets/svg/9-branch-subscribe.svg'
 
 const Subscribe = () => {
   return (
@@ -21,6 +22,8 @@ const Subscribe = () => {
         </div>
 
       </article>
+
+      <img src={ BranchSubscribe } className='branch sub'/>
     </section>
 
   )

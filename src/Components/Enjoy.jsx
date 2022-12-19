@@ -2,6 +2,7 @@ import React from 'react'
 
 import One from '../assets/imgs/1.png'
 import Two from '../assets/imgs/2.png'
+import BranchRight from '../assets/svg/4-branch-right.svg'
 
 const Enjoy = () => {
   return (
@@ -23,6 +24,7 @@ const Enjoy = () => {
       </article>
 
       <img src={ One } alt="enjoy-sushi" className='enjoy-sushi'/>
+      <img src={ BranchRight } className='branch right'/>
     </section>
   )
 }

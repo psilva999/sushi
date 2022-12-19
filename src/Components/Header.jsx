@@ -4,6 +4,8 @@ import { Link } from 'react-scroll'
 import Logo from '../assets/imgs/0-logo.png'
 import Moon from '../assets/svg/2-moon.svg'
 
+import { handleMenuList } from '../Events/handleMenu'
+
 const Header = () => {
   return (
     <header>
@@ -13,7 +15,7 @@ const Header = () => {
       </div>
 
       <nav>
-        <ul>
+        <ul onClick={ handleMenuList }>
           <Link activeClass="active"
           to='enjoy'
           spy={ true }

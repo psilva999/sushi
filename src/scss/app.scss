@@ -23,13 +23,13 @@ body {
 
   &::-webkit-scrollbar-track {
     background:#F2E8CF;
-    border-radius:.1rem;
+    border-radius:0 0 .1rem .1rem;
   }
 
   &::-webkit-scrollbar-thumb {
     background:$like-wine;
     background:$like-wine;
-    border-radius:.1rem;
+    border-radius:0 0 .1rem .1rem;
     border:.375rem solid $like-wine;
   }
 
@@ -180,7 +180,6 @@ body {
     transform:rotate(-90deg);
     border-radius:100%;
     opacity:.6;
-    transition:.2s;
     display:none;
     animation:opacity-zero .3s linear forwards;
 
@@ -191,14 +190,46 @@ body {
       font-size:1.9rem;
     }
 
-    &:hover {
-      opacity:1;
-      transition:.2s;
-    }
-
     &.active {
       display:block;
       animation:opacity-one .3s linear forwards;
+    }
+  }
+
+  .branch {
+    position:absolute;
+
+    &.right {
+      width:8rem;
+      z-index:-1;
+      margin-left:70.5rem;
+      margin-top:25rem;
+    }
+
+    &.sub {
+      width:10rem;
+      margin-top:-2.5rem;
+      margin-left:58.4rem;
+    }
+
+    &.footer-samurai {
+      margin-top:12rem;
+      margin-left:1rem;
+      width:2.7rem;
+      transform:rotate(25deg);
+    }
+
+    &.footer-right {
+      margin-left:33rem;
+      margin-top:13rem;
+      width:7rem;
+      transform:rotate(-15deg);
+    }
+
+    &.footer {
+      margin-top:9rem;
+      margin-left:63rem;
+      width:3.3rem;
     }
   }
 }

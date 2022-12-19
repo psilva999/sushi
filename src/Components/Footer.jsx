@@ -11,10 +11,17 @@ import Master from '../assets/imgs/11-master.png'
 import Pay from '../assets/imgs/12-pay.png'
 import Discover from '../assets/imgs/13-discover.png'
 
+import BranchFooter from '../assets/svg/10-detail-footer.svg'
+import BranchMainFooter from '../assets/svg/5-branch-footer.svg'
+import Samurai from '../assets/svg/7-samurai.svg'
+
 const Footer = () => {
   return (
 
     <footer>
+      <img src={ Samurai } className='branch footer-samurai'/>
+      <img src={ BranchMainFooter } className='branch footer-right'/>
+
       <section>
 
         <article>
@@ -73,6 +80,8 @@ const Footer = () => {
         </div>
 
       </article>
+
+      <img src={ BranchFooter } className='branch footer'/>
     </footer>
 
   )

@@ -5,6 +5,8 @@ footer {
   margin-bottom:2.5rem;
   display:grid;
   gap:8rem;
+  height:max-content;
+  overflow-y:hidden;
 
   .bismarck {
     user-select:none;
