@@ -4,6 +4,8 @@ import Nine from '../assets/imgs/9.png'
 import Send from '../assets/svg/8-send.svg'
 import BranchSubscribe from '../assets/svg/9-branch-subscribe.svg'
 
+import { disabledEmail, regexEmail } from '../Events/regex'
+
 const Subscribe = () => {
   return (
 
@@ -14,10 +16,10 @@ const Subscribe = () => {
         <h1>Subscribe for Offer Updates</h1>
 
         <div>
-          <input type="email" id='email' placeholder='Best E-mail'/>
+          <input type="email" id='email' placeholder='Best E-mail' onInput={ regexEmail }/>
 
-          <button disabled>
-            <img src={ Send } alt='send'/>
+          <button onClick={ disabledEmail } disabled>
+            <img onClick={ disabledEmail }src={ Send } alt='send'/>
           </button>
         </div>
 

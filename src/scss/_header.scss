@@ -4,6 +4,14 @@ header {
   justify-content:space-between;
   align-items:center;
   padding:1rem 1rem 1rem 0;
+  position:fixed;
+  top:0;
+  z-index:3;
+  background:var(--background-body);
+
+  &.fixed {
+    padding:.5rem 1rem .5rem 0;
+  }
 
   &, div, nav, ul {
     display:flex;

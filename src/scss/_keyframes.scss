@@ -1,3 +1,23 @@
+@keyframes padding-initial-header {
+  from {
+    padding:.5rem 1rem .5rem 0;
+  }
+
+  to {
+    padding:1rem 1rem 1rem 0;
+  }
+}
+
+@keyframes padding-rest-header {
+  from {
+    padding:1rem 1rem 1rem 0;
+  }
+
+  to {
+    padding:.5rem 1rem .5rem 0;
+  }
+}
+
 @keyframes opacity-one {
   from {
     opacity:0;

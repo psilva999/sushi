@@ -44,6 +44,7 @@ body {
 
   main {
     gap:1rem;
+    margin-top:4rem;
   }
 
   main section {
@@ -215,7 +216,8 @@ body {
     &.footer-samurai {
       margin-top:12rem;
       margin-left:1rem;
-      width:2.7rem;
+      width:2.5rem;
+      opacity:.7;
       transform:rotate(25deg);
     }
 
@@ -227,6 +229,7 @@ body {
     }
 
     &.footer {
+      opacity:.7;
       margin-top:9rem;
       margin-left:63rem;
       width:3.3rem;
