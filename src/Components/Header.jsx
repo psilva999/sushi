@@ -15,7 +15,7 @@ const Header = () => {
       </div>
 
       <nav>
-        <ul onClick={ handleMenuList }>
+        <ul>
           <Link activeClass="active"
           to='enjoy'
           spy={ true }
@@ -23,37 +23,37 @@ const Header = () => {
           offset={ -90 }
           duration={ 600 }
           className='link-scroll'>
-            <li>home</li> 
+            <li className='active' onClick={ handleMenuList }>home</li> 
           </Link>
 
           <Link activeClass="active"
           to='provide'
           spy={ true }
           smooth={ true }
-          offset={ 25 }
+          offset={ 0 }
           duration={ 600 }
           className='link-scroll'>
-            <li>about us</li>
+            <li onClick={ handleMenuList }>about us</li>
           </Link>
 
           <Link activeClass="active"
           to='popular'
           spy={ true }
           smooth={ true }
-          offset={ -50 }
+          offset={ -75 }
           duration={ 600 }
           className='link-scroll'>
-            <li>popular</li>
+            <li onClick={ handleMenuList }>popular</li>
           </Link>
 
           <Link activeClass="active"
           to='recently'
           spy={ true }
           smooth={ true }
-          offset={ -80 }
+          offset={ -115 }
           duration={ 600 }
           className='link-scroll'>
-            <li>recently</li>
+            <li onClick={ handleMenuList }>recently</li>
           </Link>
         </ul>
 
@@ -64,17 +64,3 @@ const Header = () => {
 }
 
 export default Header
-
-  // &::-webkit-scrollbar {
-  //   width:.43rem;
-  // }
-
-  // &::-webkit-scrollbar-track {
-  //   background:$normal-black;
-  // }
-
-  // &::-webkit-scrollbar-thumb {
-  //   background:$main-white;
-  //   background:$main-white;
-  //   border:.375rem solid $main-white;
-  // }
