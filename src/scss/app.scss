@@ -38,139 +38,6 @@ body {
     place-items:center;
   }
 
-  header, main section {
-    width:80rem;
-  }
-
-  main {
-    gap:1rem;
-    margin-top:4rem;
-  }
-
-  main section {
-    max-height:700px;
-
-    span {
-      font-family:$dancing;
-      color:$fine-orange;
-      margin-bottom:-.7rem;
-    }
-
-    h1 {
-      font-weight:500;
-    }
-  }
-
-  .enjoy, .provide, .recently {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    span {
-      font-size:1.8rem;
-    }
-
-    h1 {
-      font-size:4rem;
-    }
-
-    p {
-      font-weight:300;
-      font-size:1.1rem;
-      letter-spacing:.0625rem;
-    }
-    
-    article {
-      display:grid;
-      place-items:left;
-      gap:1.5rem;
-
-      img {
-        margin-top:.5rem;
-      }
-    }
-
-    div {
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      width:26.5rem;
-    }
-
-    .enjoy-sushi {
-      width:800px;
-    }
-  }
-
-  .popular, .subscribe, footer {
-    width:68rem;
-  }
-
-  .popular, .subscribe {
-    span {
-      font-size:1.2rem;
-    }
-  
-    h1 {
-      font-size:2.5rem;
-      margin-top:-.3rem;
-      margin-bottom:1rem;
-    }
-  }
-
-  h1, h2 {
-    font-family:$lora;
-    letter-spacing:.0625rem;
-    
-    &.logo {
-      font-weight:lighter;
-    }
-  }
-
-  li {
-    list-style:none;
-  }
-
-  button {
-    cursor:pointer;
-  }
-
-  .order {
-    background:$like-wine;
-    color:$white;
-    font-size:1.1rem;
-    font-weight:400;
-    display:flex;
-    justify-content:left;
-    align-items:center;
-    padding:.3rem 0 .3rem 2.3rem;
-    width:12.7rem;
-    letter-spacing:.1rem;
-    justify-self:left;
-    margin-top:.5rem;
-    border-radius:2rem;
-
-    &:after {
-      content:'>';
-      display:block;
-      color:$white;
-      font-size:1.7rem;
-      margin-top:.27 rem;
-      margin-left:.25rem;
-      font-weight:300;
-      transition:.5s;
-    }
-
-    &:hover:after {
-      transition:.5s;
-      margin-left:.5rem;
-    }
-
-    &:focus {
-      outline:none;
-    }
-  }
-
   .to-top {
     position:fixed;
     right:1.4rem;
@@ -238,9 +105,12 @@ body {
 }
 
 @import 'header';
+@import 'global';
+
 @import 'enjoy';
 @import 'provide-added';
-
 @import 'popular';
 @import 'subscribe';
+
 @import 'footer';
+@import 'media-querie';

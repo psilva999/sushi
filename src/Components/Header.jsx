@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import Logo from '../assets/imgs/0-logo.png'
 import Moon from '../assets/svg/2-moon.svg'
 
-import { handleMenuList } from '../Events/handleMenu'
+import { handleMenu, handleMenuList } from '../Events/handleMenu'
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
       </div>
 
       <nav>
-        <ul>
+        <ul id='menu'>
           <Link activeClass="active"
           to='enjoy'
           spy={ true }
@@ -58,8 +58,12 @@ const Header = () => {
         </ul>
 
         <img src={ Moon } alt='dark-mode' className='toggle-background'/>
+
+        <button onClick={ handleMenu } id='toggle-menu'></button>
+
       </nav>
     </header>
+
   )
 }
 

@@ -4,8 +4,8 @@ header {
   justify-content:space-between;
   align-items:center;
   padding:1rem 1rem 1rem 0;
-  position:fixed;
-  top:0;
+  // position:fixed;
+  // top:0;
   z-index:3;
   background:var(--background-body);
 
@@ -16,6 +16,10 @@ header {
   &, div, nav, ul {
     display:flex;
     align-items:center;
+  }
+
+  button {
+    display:none;
   }
 
   div {
@@ -46,7 +50,7 @@ header {
     font-weight:300;
     padding:.15rem .45rem;
     letter-spacing:.1rem;
-    transition:.5s;
+    transition:.3s;
     font-size:1rem;
 
     &:hover, &.active {
