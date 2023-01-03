@@ -3,13 +3,20 @@
 @media (max-width:82.5rem) {
   body {
     header, main section {
-      width:98vw;
+      width:60rem;
+    }
+
+    .branch, .recently h1:after {
+      display:none;
     }
   }
 } 
 
-@media (max-width:75rem) {
+@media (max-width:62rem) {
   body {
+    header, main section {
+      width:100vw;
+    }
     
     header {
       height:2.8rem;
@@ -93,11 +100,8 @@
   }
 }
 
-@media (max-width:44rem) {
+@media (max-width:50rem) {
   body {
-    header, main section {
-      width:100vw;
-    }
 
     header ul.active {
       position: fixed;

@@ -16,7 +16,7 @@ const Recently = () => {
         <button className='order'>Order Now</button>
       </article>
 
-      <img src={ Eight } alt="samurai-sushi"/>
+      <img src={ Eight } alt="samurai-sushi" className='enjoy-sushi'/>
     </section>
 
   )

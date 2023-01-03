@@ -4,9 +4,9 @@ import { Link } from 'react-scroll'
 import Header from './Components/Header'
 import Enjoy from './Components/Enjoy'
 
-// import Provide from './Components/Provide'
+import Provide from './Components/Provide'
 // import Popular from './Components/Popular'
-// import Recently from './Components/Recently'
+import Recently from './Components/Recently'
 
 // import Subscribe from './Components/Subscribe'
 // import Footer from './Components/Footer'
@@ -34,14 +34,14 @@ function App() {
       <main>
         <Enjoy/>
 
-        {/* <Provide/> */}
+        <Provide/>
         {/* <Popular/> */}
 
-        {/* <Recently/> */}
+        <Recently/>
         {/* <Subscribe/> */}
       </main>
 
-      {/* <Link activeClass="active"
+      <Link activeClass="active"
           to='enjoy'
           spy={ true }
           smooth={ true }
@@ -49,7 +49,7 @@ function App() {
           duration={ 500 }
           className='link-scroll'>
         <button className='to-top'>
-        </button></Link> */}
+        </button></Link>
 
       {/* <Footer/> */}
     </>

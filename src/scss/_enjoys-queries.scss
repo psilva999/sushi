@@ -1,0 +1,197 @@
+@media (max-width:82.5rem) {
+  body {
+    .enjoy article {
+      margin-top: -3.5rem;
+    }
+
+    .provide {
+      margin-top:-1rem;
+
+      .enjoy-sushi {
+        margin-left:0;
+      }
+    }
+
+    .recently {
+      margin-top:6rem;
+
+      h1 {
+        width:23rem;
+      }
+
+      .order:after {
+        margin-top:1.5px !important;
+      }
+    }
+  
+    .enjoy, .provide, .recently {
+      display: grid;
+      place-items: center;
+      height:450px;
+    
+      article {
+        margin-top: 0;
+      }
+    
+      .enjoy-sushi {
+        grid-area: 1/2;
+        justify-self: center;
+        margin-top:2rem;
+        width:580px !important;
+      }
+
+      span {
+        font-size:1.5rem;
+      }
+
+      h1 {
+        font-size:3rem;
+  
+        &:first-child {
+          width:23rem;
+        }
+      }
+  
+      p {
+        font-size: 1rem;
+        width: 21rem;
+      }
+
+      article {
+  
+        img {
+          width:3.1rem;
+          margin-top:.5rem;
+        }
+      }
+  
+      div {
+        width:20rem;
+      }
+    }
+
+    .order {
+      font-size:1rem;
+      width:11.75rem;
+      padding:.35rem 0 .35rem 2.3rem;
+
+      &:after {
+        font-size:1.5rem;
+        margin-top:.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width:62rem) {
+  body {
+    .enjoy, .provide, .recently {
+      padding:0 .5rem;
+
+      .enjoy-sushi {
+        width:100% !important;
+      }
+    } 
+  }
+}
+
+@media (max-width:56rem) {
+  body {
+    .recently {
+      margin-top:2.5rem;
+    }
+  }
+}
+
+@media (max-width:47rem) {
+  body {
+    main {
+      margin-top:1rem;
+    }
+
+    .order {
+      margin:.5rem auto;
+      padding:.3rem 0 .3rem 2.3rem;
+      border-radius:1.5rem;
+      
+
+      &:after {
+        font-size:1.5rem;
+        margin-top:1.5px;
+      }
+    }
+
+    .enjoy {
+      margin-top:3rem;
+    }
+
+    .provide  {
+      gap:0;
+      height:max-content;
+      margin-top:4rem;
+
+      .enjoy-sushi {
+        display:none;
+      }
+    }
+
+    .recently {
+      h1 {
+        width:15.5rem;
+        text-align:center;
+      }
+    }
+
+    .enjoy, .provide, .recently {
+      max-height:500px;
+      grid-template-columns:1fr;
+      gap:2rem;
+      padding:0;
+
+      .enjoy-sushi {
+        grid-area:1/1;
+        width:290px !important;
+        margin-top:0rem;
+      }
+  
+      h1 {
+        font-size:2rem;
+  
+        &:first-child {
+          width:15.5rem;
+        }
+      }
+  
+      p {
+        font-size:1rem;
+        width:19rem;
+        text-align:center;
+      }
+  
+      article {
+        gap:.75rem;
+        place-items:center;
+
+        img {
+          width:2.1rem;
+          margin-top:.5rem;
+        }
+      }
+  
+      div {
+        margin-left:-2rem;
+        width:13.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width:22rem) {
+  body {
+    .enjoy, .provide, .recently {
+      p {
+        width:100vw;
+      }
+    }
+  }
+}
