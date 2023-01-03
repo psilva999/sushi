@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 
 import Header from './Components/Header'
-// import Enjoy from './Components/Enjoy'
+import Enjoy from './Components/Enjoy'
 
 // import Provide from './Components/Provide'
 // import Popular from './Components/Popular'
@@ -32,7 +32,7 @@ function App() {
       <Header/>
 
       <main>
-        {/* <Enjoy/> */}
+        <Enjoy/>
 
         {/* <Provide/> */}
         {/* <Popular/> */}

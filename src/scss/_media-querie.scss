@@ -98,5 +98,40 @@
     header, main section {
       width:100vw;
     }
+
+    header ul.active {
+      position: fixed;
+      top:3rem;
+      right:1rem;
+      padding:1.25rem 1.5rem;
+      background:var(--background-body);
+    }
+
+    header li {
+      font-size:.8rem;
+    }
+
+    header .toggle-background {
+      width:1.1rem;
+    }
+
+    header button {
+      width:1.7rem;
+      height:1.7rem;
+      top:1px;
+  
+      &:before {
+        width:1.7rem;
+        height:.3rem;
+        margin-left:-1rem;
+        margin-top:-.6rem;
+      }
+  
+      &:after {
+        margin-top:-.1rem;
+        margin-left:-1rem;
+        font-size:.6rem;
+      }
+    }
   }
 }

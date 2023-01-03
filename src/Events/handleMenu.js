@@ -14,10 +14,11 @@ export function colorMenuItem() {
 
 export function handleMenuList(e) {
   handleClassItems()
-  hideMenu()
 
   if (!e.target.classList.contains("active"))
     e.target.classList.add("active")
+
+  if (document.querySelector('header ul').classList.contains("active")) hideMenu()
 }
 
 function handleClassItems(e) {
