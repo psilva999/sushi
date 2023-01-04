@@ -3,7 +3,7 @@
 @media (max-width:82.5rem) {
   body {
     header, main section {
-      width:60rem;
+      width:60rem !important;
     }
 
     .branch, .recently h1:after {
@@ -15,12 +15,12 @@
 @media (max-width:62rem) {
   body {
     header, main section {
-      width:100vw;
+      width:100vw !important;
     }
     
     header {
       height:2.8rem;
-      padding-left:.6rem;
+      padding-left:.5rem !important;
 
       img:first-child {
         width:1.7rem;
@@ -32,11 +32,6 @@
 
       nav {
         gap:1.4rem;
-      }
-
-      button, nav {
-        position:relative;
-        top:3px;
       }
 
       button {
@@ -104,7 +99,7 @@
   body {
 
     header ul.active {
-      position: fixed;
+      position:fixed;
       top:3rem;
       right:1rem;
       padding:1.25rem 1.5rem;
