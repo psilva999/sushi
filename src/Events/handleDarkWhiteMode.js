@@ -8,7 +8,8 @@ export function darkWhiteMode() {
     document.body.classList.add('dark')
     toggle.src = sun
 
-    propertys(
+    localStorage.setItem('dark', "true") 
+    properties(
       '#1A1714', 
       '#FFEAE0',
       'rgba(255,234,224,.6)',
@@ -20,7 +21,8 @@ export function darkWhiteMode() {
     document.body.classList.remove('dark')
     toggle.src = moon
 
-    propertys(
+    localStorage.setItem('dark', "false") 
+    properties(
       '#FFEAE0', 
       '#2C2420',
       'rgba(44, 36, 32,.6)',
@@ -28,7 +30,52 @@ export function darkWhiteMode() {
       'rgba(44, 36, 32,.05)')
   }
 
-  function propertys(body, text, sombra, nevoa, nuvem) {
+  function properties(body, text, sombra, nevoa, nuvem) {
+    document.documentElement.style.setProperty('--background-body', body)
+    document.documentElement.style.setProperty('--color-text', text)
+    
+    document.documentElement.style.setProperty('--sombra', sombra)
+    document.documentElement.style.setProperty('--nevoa', nevoa)
+    document.documentElement.style.setProperty('--nuvem', nuvem)
+  }
+}
+
+export function localStorageSushi() {
+  const toggle = document.querySelector('.toggle-background')
+
+  if (localStorage.getItem('dark') === null)
+    localStorage.setItem('dark', "false")
+
+  checkStatus()
+  function checkStatus() {
+    
+    if (localStorage.getItem('dark') === "true") {
+      document.body.classList.add('dark')
+      toggle.src = sun
+
+      properties(
+        '#1A1714', 
+        '#FFEAE0',
+        'rgba(255,234,224,.6)',
+        'rgba(255,234,224,.6)',
+        'rgba(255,234,224,.05)')
+    }
+
+    else {
+      document.body.classList.remove('dark')
+      toggle.src = moon
+
+      properties(
+        '#FFEAE0', 
+        '#2C2420',
+        'rgba(44, 36, 32,.6)',
+        'rgba(44, 36, 32,.6)',
+        'rgba(44, 36, 32,.05)')
+    }
+    
+  }
+
+  function properties(body, text, sombra, nevoa, nuvem) {
     document.documentElement.style.setProperty('--background-body', body)
     document.documentElement.style.setProperty('--color-text', text)
     

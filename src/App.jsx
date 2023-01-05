@@ -13,9 +13,12 @@ import Footer from './Components/Footer'
 
 import { events } from './Events/events'
 import { closeMenuFromOutside } from './Events/handleMenu'
+import { localStorageSushi } from './Events/handleDarkWhiteMode'
 
 function App() {
   window.addEventListener("scroll", events)
+  window.addEventListener("load", localStorageSushi)
+
   window.addEventListener("load", events)
   window.addEventListener("click", closeMenuFromOutside)
 
