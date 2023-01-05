@@ -6,6 +6,41 @@
       }
     }
 
+    footer {
+      width:53rem !important;
+      gap:5rem;
+      
+      .bismarck img {
+        width:1.6rem;
+      }
+
+      .social {
+        gap:.5rem;
+        
+        img {
+          width:1.3rem;
+        }
+      }
+
+      section {
+        h2 {
+          font-size:1rem;
+        }
+
+        li, p {
+          font-size:.8rem;
+        }
+
+        p {
+          width:12rem;
+        }
+      }
+
+      .copy p {
+        font-size:.8rem;
+      }
+    }
+
     .subscribe {
       width:53rem !important;
       border-radius:9rem;
@@ -177,6 +212,22 @@
 
 @media (max-width:62rem) {
   body {
+
+    footer {
+      width:90vw !important;
+
+      section {
+        flex-wrap:wrap;
+        gap:2rem; 
+      }
+
+      .copy {
+        gap:1rem;
+        display:grid;
+        grid-template-columns:1fr;
+        place-items:center;
+      }
+    }
 
     .popular {
       align-items:center !important;

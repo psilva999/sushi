@@ -9,7 +9,7 @@ import Popular from './Components/Popular'
 import Recently from './Components/Recently'
 
 import Subscribe from './Components/Subscribe'
-// import Footer from './Components/Footer'
+import Footer from './Components/Footer'
 
 import { events } from './Events/events'
 import { closeMenuFromOutside } from './Events/handleMenu'
@@ -51,7 +51,7 @@ function App() {
         <button className='to-top'>
         </button></Link>
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }
