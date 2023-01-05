@@ -5,6 +5,7 @@ import Logo from '../assets/imgs/0-logo.png'
 import Moon from '../assets/svg/2-moon.svg'
 
 import { handleMenu, handleMenuList } from '../Events/handleMenu'
+import { darkWhiteMode } from '../Events/handleDarkWhiteMode'
 
 const Header = () => {
   return (
@@ -57,7 +58,7 @@ const Header = () => {
           </Link>
         </ul>
 
-        <img src={ Moon } alt='dark-mode' className='toggle-background'/>
+        <img src={ Moon } alt='dark-mode' className='toggle-background' onClick={ darkWhiteMode }/>
 
         <button onClick={ handleMenu } id='toggle-menu'></button>
 

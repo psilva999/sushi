@@ -17,6 +17,15 @@
     header, main section {
       width:100vw !important;
     }
+
+    &.dark header button:before {
+      opacity:.8;
+    }
+
+    .enjoy .order:after {
+      position:relative;
+      top:1px !important; 
+    }
     
     header {
       height:2.8rem;

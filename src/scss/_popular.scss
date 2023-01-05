@@ -26,6 +26,10 @@
     align-items:center;
     width:100%;
 
+    h2, p {
+      color:$black;
+    }
+
     h2 {
       font-size:1.6rem;
       font-weight:500;

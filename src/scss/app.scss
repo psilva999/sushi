@@ -38,6 +38,10 @@ body {
     place-items:center;
   }
 
+  &, header, main {
+    transition:background .4s;
+  }
+
   .to-top {
     position:fixed;
     right:1.4rem;
