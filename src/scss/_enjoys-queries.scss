@@ -340,9 +340,23 @@
       gap:5rem;
     }
 
+    .enjoy, .recently {
+      height:max-content !important;
+    }
+
+    .recently {
+      padding:5rem 0 0 0;
+      margin-top:0 !important;
+    }
+
+    .provide {
+      margin-top:0rem !important;
+      margin-bottom:0 !important;
+      height:500px !important;
+    }
+
     .enjoy, .provide, .recently {
       gap:2rem;
-      height:max-content !important;
 
       .enjoy-sushi {
         width: 280px !important;;
@@ -384,8 +398,6 @@
 
     .provide  {
       gap:0;
-      margin-top:3rem !important;
-      margin-bottom:4rem !important;
       .enjoy-sushi {
         display:none;
       }
@@ -408,7 +420,6 @@
     }
 
     .recently {
-      margin-top:1rem !important;
 
       h1, p {
         margin-top:-.75rem;

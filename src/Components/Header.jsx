@@ -8,6 +8,20 @@ import { handleMenu, handleMenuList } from '../Events/handleMenu'
 import { darkWhiteMode } from '../Events/handleDarkWhiteMode'
 
 const Header = () => {
+  let provide,
+      recently
+
+  window.addEventListener('load', handleScroll)
+  window.addEventListener('resize', handleScroll)
+
+  function handleScroll() {
+    window.matchMedia("(max-width:800px)").matches? provide = -120 : null
+
+    window.matchMedia("(max-width:1320px)").matches && window.matchMedia("(min-width:801px)").matches? provide = 20 : null
+
+    window.matchMedia("(min-width:1321px)").matches? provide = 0 : null
+  }
+
   return (
     <header>
       <div>
@@ -31,7 +45,7 @@ const Header = () => {
           to='provide'
           spy={ true }
           smooth={ true }
-          offset={ 0 }
+          offset={ provide }
           duration={ 600 }
           className='link-scroll'>
             <li onClick={ handleMenuList }>about us</li>
@@ -51,7 +65,7 @@ const Header = () => {
           to='recently'
           spy={ true }
           smooth={ true }
-          offset={ -115 }
+          offset={ window.matchMedia("(min-width:1321px)").matches? -120 : 0 }
           duration={ 600 }
           className='link-scroll'>
             <li onClick={ handleMenuList }>recently</li>
