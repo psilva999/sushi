@@ -9,7 +9,7 @@ import { disabledEmail, regexEmail } from '../Events/regex'
 const Subscribe = () => {
   return (
 
-    <section className='subscribe' id ='subscribe'>
+    <section className='subscribe reveal' id ='subscribe'>
       <img src={ Nine } className='offer'/>
 
       <article> <span>Newsletter</span>

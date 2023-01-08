@@ -12,7 +12,7 @@
 
     footer {
       width:60rem !important;
-      gap:5rem;
+      gap:4rem;
       margin-bottom:1rem;
       
       .bismarck img {
@@ -300,6 +300,10 @@
         width:100% !important;
       }
     } 
+
+    .order:after {
+      margin-top:0 !important;
+    }
   }
 }
 
@@ -380,7 +384,7 @@
     .enjoy {
       place-items:left;
       display:grid;
-      margin-top:4rem !important;
+      margin-top:5rem !important;
 
       article {
         gap:.75rem;
@@ -432,7 +436,11 @@
 
       .order:after {
         position:relative;
-        top:1px !important;
+        top:0px !important;
+      }
+
+      .recently .order:after {
+        content:'sad';
       }
     }
   }

@@ -1,4 +1,5 @@
 @import 'config';
+@import 'keyframes';
 
 footer {
   margin:auto;
@@ -7,6 +8,27 @@ footer {
   gap:8rem;
   height:max-content;
   overflow-y:hidden;
+  opacity:0;
+
+  &.active {
+    opacity:1;
+
+    .copy, section {
+      animation:reveal-bottom .8s linear forwards;
+    }
+
+    .footer-samurai {
+      animation:reveal-container .6s linear forwards;
+    }
+
+    .footer-right {
+      animation:reveal-container 4s linear forwards;
+    }
+
+    .footer {
+      animation:reveal-container .2s linear forwards;
+    }
+  }
 
   .bismarck {
     user-select:none;

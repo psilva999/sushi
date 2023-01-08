@@ -7,8 +7,8 @@ import Seven from '../assets/imgs/7.png'
 const Popular = () => {
   return (
 
-    <section className='popular' id='popular'>
-      <div> <span>The Best Food</span>
+    <section className='popular reveal' id='popular'>
+      <div className='peace'> <span>The Best Food</span>
         <h1>Popular Dishes</h1>
       </div>
 

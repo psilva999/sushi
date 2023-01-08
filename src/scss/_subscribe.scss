@@ -1,4 +1,5 @@
 @import 'config';
+@import 'keyframes';
 
 .subscribe {
   background:$black;
@@ -8,6 +9,11 @@
   border-radius:9rem;
   margin:8rem 0 14rem 0;
   height:18rem;
+  opacity:0;
+
+  &.active {
+    animation:reveal-container .8s linear forwards;
+  }
 
   &, div {
     display:flex;
@@ -64,7 +70,7 @@
 
   button {
     border-radius:1.7rem .5rem 1.5rem 0rem;
-    background:$like-wine;
+    background:$like-orange;
     height:100%;
     width:3.3rem;
     place-items:center;

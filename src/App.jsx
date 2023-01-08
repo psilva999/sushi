@@ -16,10 +16,10 @@ import { closeMenuFromOutside } from './Events/handleMenu'
 import { localStorageSushi } from './Events/handleDarkWhiteMode'
 
 function App() {
-  window.addEventListener("scroll", events)
-  window.addEventListener("load", localStorageSushi)
-
+  window.addEventListener("scroll", events) 
   window.addEventListener("load", events)
+
+  window.addEventListener("load", localStorageSushi)
   window.addEventListener("click", closeMenuFromOutside)
 
   window.addEventListener("resize", () => {

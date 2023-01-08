@@ -1,6 +1,8 @@
 @import 'config';
+@import 'keyframes';
 
 .enjoy {
+
   h1 {
     &:first-child {
       width:30rem;
@@ -16,7 +18,8 @@
   }
 
   article {
-    margin-top:-3rem;
+    animation:reveal-bottom .8s linear forwards;
+    margin-top:-3.2rem;
   }
 
   p {
@@ -24,7 +27,8 @@
   }
 
   .enjoy-sushi {
+    animation:reveal-right .8s linear forwards;
     width:800px;
-    margin-top:1.3rem;
+    margin-top:1.6rem;
   }
 }

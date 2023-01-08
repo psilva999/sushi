@@ -6,7 +6,7 @@ import Four from '../assets/imgs/4.png'
 const Provide = () => {
   return (
 
-    <section className='provide' id='provide'>
+    <section className='provide reveal' id='provide'>
       <img src={ Three } alt="provide-image" className='enjoy-sushi'/>
 
       <article> <span>About Us</span>

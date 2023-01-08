@@ -71,6 +71,8 @@ export function localStorageSushi() {
         'rgba(44, 36, 32,.6)',
         'rgba(44, 36, 32,.6)',
         'rgba(44, 36, 32,.05)')
+
+      console.log("down")
     }
     
   }

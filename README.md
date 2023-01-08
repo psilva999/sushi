@@ -17,7 +17,7 @@ ___
 ___
 * Responsive Design
 * Scroll Effect
-
+* Scroll Reveal
 * LocalStorage
 * Darkmode
 
@@ -33,6 +33,7 @@ ___
 `npm install`
 
 `npm run dev`
+
 ### ...
 `npm i react-router-dom`
 
@@ -70,6 +71,6 @@ export default defineConfig({
 
 1 - git add dist -f
 
-2 - git commit -m 'github-page habilitado'
+2 - git commit -m 'github-page on'
 
 3 - git subtree push --prefix dist origin gh-pages

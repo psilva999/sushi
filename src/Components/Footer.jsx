@@ -18,7 +18,7 @@ import Samurai from '../assets/svg/7-samurai.svg'
 const Footer = () => {
   return (
 
-    <footer>
+    <footer className='reveal'>
       <img src={ Samurai } className='branch footer-samurai'/>
       <img src={ BranchMainFooter } className='branch footer-right'/>
 
