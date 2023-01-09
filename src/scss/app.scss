@@ -42,6 +42,10 @@ body {
     transition:background .4s;
   }
 
+  main, .enjoy, .provide, .recently, .popular {
+    overflow:hidden;
+  }
+
   .to-top {
     position:fixed;
     right:1.4rem;
@@ -53,6 +57,7 @@ body {
     border-radius:100%;
     opacity:.6;
     display:none;
+    z-index:2;
     animation:opacity-zero .3s linear forwards;
 
     &:after {

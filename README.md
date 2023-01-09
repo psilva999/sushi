@@ -20,6 +20,7 @@ ___
 * Scroll Reveal
 * LocalStorage
 * Darkmode
+* Regex E-mail
 
 ## Details
 

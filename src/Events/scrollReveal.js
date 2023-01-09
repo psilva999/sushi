@@ -23,6 +23,6 @@ export function scrollAnime() {
   if (showSubscribe < showContent) 
     arrayContainer[3].classList.add('active')
 
-  if (showFooter < showContent) 
+  if (showFooter < +(window.innerHeight - 150)) 
     arrayContainer[4].classList.add('active')
 }
